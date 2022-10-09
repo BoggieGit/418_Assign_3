@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script type="text/javascript">
+      function add(){
+        var first_number = parseInt(document.getElementById("Text1").value);
+                var second_number = parseInt(document.getElementById("Text2").value);
+                var result = first_number + second_number;
+    
+                document.getElementById("txtresult").value = result;   
+      }
+    </script>
+    <style>
+      .column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+.myDiv {
+  border: 1px outset gray;
+  background-color: rgb(255, 255, 255);
+  width: 500px; height: 400px; 
+  text-align: center;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+    </style>
+
+
+    <title>Adelson Jules WebApp.</title>
+  </head>
+    <div>
+      <div style="float: left">
+        
+      <img src="https://418assign3bucket.s3.amazonaws.com/5A89A94D-5131-447C-9423-F888695C1C60.jpeg" style="width: 300px; height: 300px;" />
+      </div>
+      <div>
+        <h2 style="border: 1px outset blue; "> Adelson Jules WebApp.</h2>
+          <p style="border: 1px outset red; width: fit-content; "> Hi my name is AJ this is my assignment and I cant belive i being a real Software Engineer. </p> 
+      </div>
+    </div>
+      
+  </body>
+  <form action="/endpoint" method="post">
+    Enter First Number : <br>
+    <input type="text" id="Text1" name="TextBox1">
+    <br>
+    Enter Second Number : <br>
+    <input type="text" id="Text2" name="TextBox2">
+    <br>
+    Result : <br>
+    <input type="text" id="txtresult" name="TextBox3">
+    <br>
+ <input type="button" name="clickbtn" value="Display Result" onclick="add()">
+</form>
+</html>
