@@ -1,11 +1,16 @@
 {
-  "name": "418_assign_3",
-  "version": "1.0.0",
-  "description": "",
+  "name": "418-assign-3",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-      "start": "node server.js"
+    "start": "node ./bin/www"
   },
   "dependencies": {
-      "express": "^4.17.1"
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "^0.29.0",
+    "morgan": "~1.9.1"
   }
 }
